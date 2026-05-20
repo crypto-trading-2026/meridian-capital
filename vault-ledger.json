@@ -1,0 +1,15 @@
+{
+  "vaultAddress": "0x8208013fe472f9549535e3ec19e658e4437bfcc7",
+  "assets": {
+    "WBTC": {
+      "trades": [
+        {
+          "date": "2026-05-20",
+          "action": "BUY",
+          "spentUsd": 11000.00,
+          "acquiredAmount": 0.14360635
+        }
+      ]
+    }
+  }
+}
