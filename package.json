@@ -1,0 +1,20 @@
+{
+  "name": "meridian-capital",
+  "version": "1.0.0",
+  "description": "Meridian Capital",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@axc.github.com:crypto-trading-2026/meridian-capital.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@dhedge/chamber-mcp": "^0.1.1"
+  }
+}

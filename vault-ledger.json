@@ -1,15 +1,297 @@
 {
   "vaultAddress": "0x8208013fe472f9549535e3ec19e658e4437bfcc7",
+  "name": "Meridian Capital",
+  "symbol": "MRD",
+  "manager": "0x30890e255c4e03cb18fc3e4dbb3eb322a1c92dcf",
+  "trader": "0xAc25D7217FCCff38Ba52d3a7F453506522428713",
+  "lastUpdated": "2026-07-01T04:00:00Z",
+  "dataSource": "dHEDGE v2 GraphQL API + on-chain eth_getLogs (mevblocker.io) + ERC-20 balanceOf",
+
+  "capitalFlow": {
+    "initialCapital": 91576.00,
+    "totalWithdrawn": 58603.00,
+    "currentValue": 32972.29,
+    "netChange": -603.71,
+    "note": "初始本金 ~$91,576，已提现 ~$58,603（64%），当前剩余 $32,972。差额 ~$600 为交易亏损+费用。"
+  },
+
+  "investors": {
+    "totalSupply": 33602.13,
+    "tokenPrice": 0.981254,
+    "currentMembers": [
+      {
+        "address": "0x218d2dc588408369ce7cc033cdc0881e9267c95e",
+        "balance": 18256.72,
+        "usdValue": 17917,
+        "lastUpdateBlock": 25248328,
+        "lastUpdateDate": "2026-06-05",
+        "note": "6/5 曾赎回 $4,898，当前剩余为赎回后余额"
+      },
+      {
+        "address": "0xd57a6204968726dc10210d97f09ad3da76141999",
+        "balance": 13642.81,
+        "usdValue": 13390,
+        "lastUpdateBlock": 25133600,
+        "lastUpdateDate": "2026-05-20",
+        "note": "5/18 曾赎回 $14,250，当前剩余为赎回后余额"
+      },
+      {
+        "address": "0x54d2413ad5e0b76171ff45102bec7ff98412240b",
+        "balance": 1685.24,
+        "usdValue": 1654,
+        "lastUpdateBlock": 25133541,
+        "lastUpdateDate": "2026-05-20",
+        "note": "5/18 曾赎回 $1,760，当前剩余为赎回后余额"
+      },
+      {
+        "address": "0x30890e255c4e03cb18fc3e4dbb3eb322a1c92dcf",
+        "balance": 15.62,
+        "usdValue": 15.33,
+        "lastUpdateBlock": 25344427,
+        "lastUpdateDate": "2026-06-18",
+        "role": "manager"
+      }
+    ],
+    "exitedMembers": [
+      {
+        "address": "0x4b992e621437e79b8c78e3b32635e41e375b9dcd",
+        "totalWithdrawn": 37664.00,
+        "note": "5/17 赎回 $29,800（首次 WBTC 买入后即退出）+ 6/5 赎回 $2,998 + $4,898。已完全退出。"
+      }
+    ]
+  },
+
+  "withdrawals": {
+    "confirmed": [
+      {
+        "blockNumber": 25114981,
+        "date": "2026-05-17T12:43:00Z",
+        "investor": "0x4b992e621437e79b8c78e3b32635e41e375b9dcd",
+        "valueUsd": 29800.47,
+        "tokensBurned": 29798.24,
+        "txHash": "0x166a4386159bc7560683bd591001379f8b4094b5c529840821c1fc830fbc7b4f",
+        "note": "首次 2 笔 WBTC 买入后立即大额退出 — 该 LP 几乎全部撤资"
+      },
+      {
+        "blockNumber": 25121297,
+        "date": "2026-05-18T09:49:00Z",
+        "investor": "0xd57a6204968726dc10210d97f09ad3da76141999",
+        "valueUsd": 14249.54,
+        "tokensBurned": 14260.68,
+        "txHash": "0xc9be74b2a440f195580ce2dc42a0381142cf8c0eec41be75ca1339117363c7dc",
+        "note": "部分赎回，该 LP 后续仍持有 13,643 tokens"
+      },
+      {
+        "blockNumber": 25121303,
+        "date": "2026-05-18T09:50:00Z",
+        "investor": "0x54d2413ad5e0b76171ff45102bec7ff98412240b",
+        "valueUsd": 1760.18,
+        "tokensBurned": 1761.56,
+        "txHash": "0xa0d2733b2f60810331de27ffb2df893e624bcc1721916e5bff3ce9d32057be81",
+        "note": "部分赎回，该 LP 后续仍持有 1,685 tokens"
+      },
+      {
+        "blockNumber": 25248174,
+        "date": "2026-06-05T02:23:00Z",
+        "investor": "0x4b992e621437e79b8c78e3b32635e41e375b9dcd",
+        "valueUsd": 2997.74,
+        "tokensBurned": 3060.00,
+        "txHash": "0x6fc07ce865d6d98b86dd9a2331897720d1640f374f8f396332e8d9361844ee4a",
+        "note": "该 LP 第二次赎回"
+      },
+      {
+        "blockNumber": 25248181,
+        "date": "2026-06-05T02:24:00Z",
+        "investor": "0x4b992e621437e79b8c78e3b32635e41e375b9dcd",
+        "valueUsd": 0.00,
+        "tokensBurned": 0.00,
+        "txHash": "0xee627476205ff9861fa3a15690291f082a19c2720a5b0c7f5905de28252ec8bf",
+        "note": "零值赎回（可能是 dust 清理或交易失败）"
+      },
+      {
+        "blockNumber": 25248182,
+        "date": "2026-06-05T02:24:00Z",
+        "investor": "0x4b992e621437e79b8c78e3b32635e41e375b9dcd",
+        "valueUsd": 0.00,
+        "tokensBurned": 0.00,
+        "txHash": "0x4f4ec2093138e026edad775053af18d7f943310c99260f7870566564f3be49e3",
+        "note": "零值赎回（可能是 dust 清理或交易失败）"
+      },
+      {
+        "blockNumber": 25248284,
+        "date": "2026-06-05T02:45:00Z",
+        "investor": "0x4b992e621437e79b8c78e3b32635e41e375b9dcd",
+        "valueUsd": 4898.27,
+        "tokensBurned": 5000.00,
+        "txHash": "0xae49b6b1be7bb7016b94f7a7852ea378ff51d2b7ad439a19483830b35386c601",
+        "note": "该 LP 第三次赎回（共赎回 $37,664），完全退出"
+      },
+      {
+        "blockNumber": 25248328,
+        "date": "2026-06-05T02:54:00Z",
+        "investor": "0x218d2dc588408369ce7cc033cdc0881e9267c95e",
+        "valueUsd": 4898.28,
+        "tokensBurned": 5000.00,
+        "txHash": "0x6eb885ffb6efe341efed3c0705044936ce03eefc52d383a75b6dfad2be4ef2b7",
+        "note": "该 LP 部分赎回，剩余 18,257 tokens"
+      }
+    ],
+    "totalWithdrawnValue": 58603.00,
+    "note": "8 笔赎回事件（含 2 笔零值），总计赎回 ~$58,603 USD，占总初始资本 64%。"
+  },
+
+  "deposits": {
+    "confirmed": 7,
+    "note": "链上确认 7 笔 Deposit 事件，但未逐一解码。从总 supply 和赎回推算，初始投入约 $91,576。"
+  },
+
+  "onchainStats": {
+    "totalTransactionExecutedEvents": 34,
+    "dhedgeApiTradeEvents": 16,
+    "unaccountedExecutions": 18,
+    "note_unaccounted": "链上有 34 笔 TransactionExecuted，dHEDGE API 只返回 16 笔。差额 18 笔可能包含: (1) 非交易操作 (2) 赎回前的资产清算 (3) 6/18 后的交易 (4) dHEDGE indexer 未覆盖的事件。"
+  },
+
+  "fees": {
+    "managerFees": [
+      {
+        "blockNumber": 25248328,
+        "date": "2026-06-05T02:54:00Z",
+        "daoFee": 0.000323,
+        "managerFee": 0.002908,
+        "tokenPrice": 1.000113,
+        "note": "金额极小（<$0.01），费用对 NAV 影响可忽略"
+      },
+      {
+        "blockNumber": 25344427,
+        "date": "2026-06-18T00:00:00Z",
+        "daoFeeMinted": 6.16,
+        "managerFeeMinted": 0.62,
+        "note": "估计 $6-7 费用"
+      }
+    ],
+    "note": "Manager fee 当前极低（部分 mint 事件解码不完整），对总资产影响可忽略。"
+  },
+
+  "summary": {
+    "totalFundValue": 32972.29,
+    "realizedPnl": { "WBTC": -1204.87 },
+    "unrealizedPnl": { "NVDAon": -2.93, "QQQon": -1.18 },
+    "totalPnl": { "realized": -1204.87, "unrealized": -4.11, "combined": -1208.98 }
+  },
+
   "assets": {
     "WBTC": {
+      "currentBalance": 0,
+      "note": "链上余额=0。FIFO 应剩余 0.025577 WBTC（成本 $1,699.40），但已被处置（可能在 34-16=18 笔未记录 TransactionExecuted 中卖出）。",
       "trades": [
-        {
-          "date": "2026-05-20",
-          "action": "BUY",
-          "spentUsd": 11000.00,
-          "acquiredAmount": 0.14360635
-        }
-      ]
+        { "date": "2026-05-17", "action": "BUY", "acquiredAmount": 0.01278, "spentAmount": 1000, "spentCurrency": "USDT", "pricePerUnit": 78247.26, "txHash": "0x1a06cea97fa2587ab894fa94107f2c75036933d060dd4f66739c6e42121de46b" },
+        { "date": "2026-05-17", "action": "BUY", "acquiredAmount": 0.012797, "spentAmount": 1000, "spentCurrency": "USDT", "pricePerUnit": 78143.31, "txHash": "0x7e1fe602677b8918f10b9f2b4bc92451165a747aaf6ee2a8e4070279853c5051" },
+        { "date": "2026-05-20", "action": "BUY", "acquiredAmount": 0.01307, "spentAmount": 1000, "spentCurrency": "USDT", "pricePerUnit": 76511.09, "txHash": "0x317b214756ca5ed59476c5f3af4c1741b6c5daffdd20379f0af0b0475ecd1fa0" },
+        { "date": "2026-05-20", "action": "BUY", "acquiredAmount": 0.130536, "spentAmount": 10000, "spentCurrency": "USDT", "pricePerUnit": 76607.22, "txHash": "0xfcc41dd5199ee4835a6d936b68943cc67658641cec89a3f5d38771a9930d8550" },
+        { "date": "2026-05-21", "action": "BUY", "acquiredAmount": 0.129155, "spentAmount": 10000, "spentCurrency": "USDT", "pricePerUnit": 77426.35, "txHash": "0x1b464ea316f92777da13f74e41c5a6b63c76fbd2f8da3060f17365b2f21d415a" },
+        { "date": "2026-05-22", "action": "BUY", "acquiredAmount": 0.128972, "spentAmount": 10000, "spentCurrency": "USDT", "pricePerUnit": 77536.21, "txHash": "0xbfe5bc267a6d3e1a147dd54633fa4138addefea98aaba394590a319f5b56f3bc" },
+        { "date": "2026-05-22", "action": "SELL", "soldAmount": 0.401733, "receivedAmount": 30133.848631, "receivedCurrency": "USDC", "pricePerUnit": 75002.75, "avgCostBasis": 77203.02, "realizedPnl": -883.01, "txHash": "0x841d6c82ba99d57fb67b33c4f90dfd1a1a19a3ad15dee6f548362f478b523bb1" },
+        { "date": "2026-06-03", "action": "BUY", "acquiredAmount": 0.014921, "spentAmount": 1000, "spentCurrency": "USDT", "pricePerUnit": 67019.64, "txHash": "0x74c4461435a45474b23f620a48bb4701c094f77421fd97e943ea1739d6075322" },
+        { "date": "2026-06-03", "action": "SELL", "soldAmount": 0.014921, "receivedAmount": 956.673626, "receivedCurrency": "USDT", "pricePerUnit": 64119.43, "avgCostBasis": 77536.21, "realizedPnl": -200.24, "txHash": "0xf08c1d171e0e6eaab990cec26fd1762f335ee81c279da50952b600e310f9645f" },
+        { "date": "2026-06-08", "action": "BUY", "acquiredAmount": 0.004757, "spentAmount": 300, "spentCurrency": "USDT", "pricePerUnit": 63064.96, "txHash": "0x0d85a29f1d9c5e3b5ee97d5c7bcb9f3f002fd57178a1453e5b809e682a00c676" },
+        { "date": "2026-06-17", "action": "BUY", "acquiredAmount": 0.004617, "spentAmount": 300, "spentCurrency": "USDT", "pricePerUnit": 64977.26, "txHash": "0x800aa280e4bc5f905e89486f83d8c19b57e6bf8ed869519996c36ed365cbd841" },
+        { "date": "2026-06-18", "action": "SELL", "soldAmount": 0.009374, "receivedAmount": 605.210585, "receivedCurrency": "USDC", "pricePerUnit": 64563.06, "avgCostBasis": 77536.21, "realizedPnl": -121.61, "txHash": "0x6e33f402e8606f7681b16469e615581f6dc6aa7765b641e3eca25eb2de1004f7" }
+      ],
+      "fifoSummary": {
+        "totalBought": 0.451605, "totalSold": 0.426028,
+        "remainingPerFifo": 0.025577, "remainingCostBasis": 1699.40,
+        "avgAcquisitionPrice": 77553, "realizedPnl": -1204.87
+      }
+    },
+
+    "aEthUSDC": {
+      "tokenAddress": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+      "physicalBalance": 21762.19,
+      "dhedgePosition": 28957.19,
+      "rate": 1.0,
+      "currentValue": 28957.19,
+      "note": "dHEDGE 将 aEthUSDC + aEthUSDT 合并为单一 Aave V3 仓位。物理 aToken 余额 21,762 已计入 dHEDGE 仓位的 28,957 USDC 等值。",
+      "trades": [
+        { "date": "2026-05-30", "action": "AAVE_DEPOSIT", "depositedAmount": 30133.85, "depositedCurrency": "USDC", "receivedAmount": 30133.85, "receivedCurrency": "aEthUSDC", "rate": "1:1", "txHash": "0x2fece5f53119b6e4d4a9d7754e390fa439c663ea54c7ca31e664c4200778aa6d" }
+      ],
+      "costBasis": {
+        "originalDeposit": 30133.85,
+        "currentPosition": 28957.19,
+        "difference": -1176.66,
+        "note": "差额 ~$1,177 = $200 股票购买 + ~$977 被赎回/利息。由于 5/17-6/5 间 $58,603 被提现，大部分 USDC/USDT 流动性来自 aToken 赎回。"
+      }
+    },
+
+    "aEthUSDT": {
+      "tokenAddress": "0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a",
+      "physicalBalance": 7215.68,
+      "rate": 1.0,
+      "currentValue": 7215.68,
+      "note": "物理 aToken 余额 $7,216，不计入 dHEDGE composition（已移除 supportedAsset）。",
+      "trades": [
+        { "date": "2026-05-30", "action": "AAVE_DEPOSIT", "depositedAmount": 10000, "depositedCurrency": "USDT", "receivedAmount": 10000, "receivedCurrency": "aEthUSDT", "rate": "1:1", "txHash": "0x4e9ba675c7d3c1faee815eeb9cba9ac1d8ec52b57287b6edab86910fbcaa1299" }
+      ],
+      "costBasis": { "originalDeposit": 10000, "currentBalance": 7215.68, "redeemed": 2784.32 }
+    },
+
+    "NVDAon": {
+      "currentBalance": 0.485400939, "rate": 199.97, "currentValue": 97.07,
+      "trades": [{ "date": "2026-06-18", "action": "BUY", "acquiredAmount": 0.485401, "spentAmount": 100, "spentCurrency": "USDC", "pricePerUnit": 206.02, "txHash": "0x15e085ba0da050d161d8ec09622126a80c4be76c8ba0b6a7fab2939ac69af150" }],
+      "costBasis": { "totalCost": 100, "avgPricePerUnit": 206.02 },
+      "unrealizedPnl": -2.93
+    },
+
+    "QQQon": {
+      "currentBalance": 0.136218134, "rate": 725.44, "currentValue": 98.82,
+      "trades": [{ "date": "2026-06-18", "action": "BUY", "acquiredAmount": 0.136219, "spentAmount": 100, "spentCurrency": "USDC", "pricePerUnit": 734.11, "txHash": "0x2a1faf10f9e756ecb00b7b84befe42ad542cfc2949fbe5cf72764448ddcc37bc" }],
+      "costBasis": { "totalCost": 100, "avgPricePerUnit": 734.11 },
+      "unrealizedPnl": -1.18
+    },
+
+    "USDC": {
+      "currentBalance": 405.21, "rate": 1.0, "currentValue": 405.05,
+      "note": "idle 余额。来自 6/18 卖出 WBTC 扣除 NVDAon/QQQon 购买后的剩余。"
+    },
+
+    "USDT": {
+      "currentBalance": 3419.90, "rate": 1.0, "currentValue": 3414.16,
+      "note": "idle 余额。来源为 aEthUSDT 赎回剩余 + 6/3 卖出 WBTC 回收。"
     }
-  }
+  },
+
+  "checkpoint": {
+    "description": "下次更新从这里继续，无需从头重查",
+    "lastUpdated": "2026-07-01T04:00:00Z",
+    "lastQueriedBlock": 25434689,
+    "lastQueriedBlockTimestamp": "2026-07-01",
+    "rpcUsed": "https://rpc.mevblocker.io（支持 archive）",
+    "dhedgeApiLastTimestamp": 1781764079,
+    "dhedgeApiLastDate": "2026-06-18T06:27:59Z",
+    "dhedgeApiLastEventCount": 16,
+    "totalOnchainTxExecutedEvents": 34,
+    "totalOnchainWithdrawals": 8,
+    "totalOnchainDeposits": 7,
+    "vaultTokenBalances": {
+      "WBTC": 0,
+      "USDC": 405.210585,
+      "USDT": 3419.902114,
+      "aEthUSDC": 21762.194842,
+      "aEthUSDT": 7215.677016,
+      "NVDAon": 0.485400939,
+      "QQQon": 0.136218134,
+      "SPYon": 0,
+      "TOROS": 0,
+      "XAUt": 0
+    },
+    "nextSteps": [
+      "1. dHEDGE GraphQL: tradeEvents(filter: {timeFrom: 1781764079}) 查 6/18 后新增交易",
+      "2. eth_getLogs (vault): fromBlock=0x1844a3a (25434690) 查新增链上事件",
+      "3. ERC-20 balanceOf: 各 token 余额变化对比 checkpoint 快照",
+      "4. eth_getLogs (vault): topics=[Withdrawal|Deposit] 查新增充提",
+      "5. 更新 capitalFlow / withdrawals / deposits / assets / checkpoint"
+    ]
+  },
+
+  "pendingVerification": []
 }
