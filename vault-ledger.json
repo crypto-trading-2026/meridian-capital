@@ -4,17 +4,15 @@
   "symbol": "MRD",
   "manager": "0x30890e255c4e03cb18fc3e4dbb3eb322a1c92dcf",
   "trader": "0xAc25D7217FCCff38Ba52d3a7F453506522428713",
-  "lastUpdated": "2026-07-24T08:52:10Z",
+  "lastUpdated": "2026-08-02T10:00:00Z",
   "dataSource": "dHEDGE v2 GraphQL API + on-chain eth_getLogs (mevblocker.io) + ERC-20 balanceOf",
-
   "capitalFlow": {
-    "initialCapital": 91576.00,
-    "totalWithdrawn": 58603.00,
+    "initialCapital": 98518.67,
+    "totalWithdrawn": 58603,
     "currentValue": 34735.46,
     "netChange": 1762.46,
-    "note": "初始本金 ~$91,576，已提现 ~$58,603（64%），当前剩余 $34,735。累计净增值约 $1,762。"
+    "note": "初始本金 ~$98,518.67，已提现 ~$58,603（59%），当前剩余约 $41678。7/30 LP 新增存入约 $6,942.67。"
   },
-
   "investors": {
     "totalSupply": 33602.13,
     "tokenPrice": 0.981254,
@@ -55,12 +53,11 @@
     "exitedMembers": [
       {
         "address": "0x4b992e621437e79b8c78e3b32635e41e375b9dcd",
-        "totalWithdrawn": 37664.00,
+        "totalWithdrawn": 37664,
         "note": "5/17 赎回 $29,800（首次 WBTC 买入后即退出）+ 6/5 赎回 $2,998 + $4,898。已完全退出。"
       }
     ]
   },
-
   "withdrawals": {
     "confirmed": [
       {
@@ -95,7 +92,7 @@
         "date": "2026-06-05T02:23:00Z",
         "investor": "0x4b992e621437e79b8c78e3b32635e41e375b9dcd",
         "valueUsd": 2997.74,
-        "tokensBurned": 3060.00,
+        "tokensBurned": 3060,
         "txHash": "0x6fc07ce865d6d98b86dd9a2331897720d1640f374f8f396332e8d9361844ee4a",
         "note": "该 LP 第二次赎回"
       },
@@ -103,8 +100,8 @@
         "blockNumber": 25248181,
         "date": "2026-06-05T02:24:00Z",
         "investor": "0x4b992e621437e79b8c78e3b32635e41e375b9dcd",
-        "valueUsd": 0.00,
-        "tokensBurned": 0.00,
+        "valueUsd": 0,
+        "tokensBurned": 0,
         "txHash": "0xee627476205ff9861fa3a15690291f082a19c2720a5b0c7f5905de28252ec8bf",
         "note": "零值赎回（可能是 dust 清理或交易失败）"
       },
@@ -112,8 +109,8 @@
         "blockNumber": 25248182,
         "date": "2026-06-05T02:24:00Z",
         "investor": "0x4b992e621437e79b8c78e3b32635e41e375b9dcd",
-        "valueUsd": 0.00,
-        "tokensBurned": 0.00,
+        "valueUsd": 0,
+        "tokensBurned": 0,
         "txHash": "0x4f4ec2093138e026edad775053af18d7f943310c99260f7870566564f3be49e3",
         "note": "零值赎回（可能是 dust 清理或交易失败）"
       },
@@ -122,7 +119,7 @@
         "date": "2026-06-05T02:45:00Z",
         "investor": "0x4b992e621437e79b8c78e3b32635e41e375b9dcd",
         "valueUsd": 4898.27,
-        "tokensBurned": 5000.00,
+        "tokensBurned": 5000,
         "txHash": "0xae49b6b1be7bb7016b94f7a7852ea378ff51d2b7ad439a19483830b35386c601",
         "note": "该 LP 第三次赎回（共赎回 $37,664），完全退出"
       },
@@ -131,27 +128,24 @@
         "date": "2026-06-05T02:54:00Z",
         "investor": "0x218d2dc588408369ce7cc033cdc0881e9267c95e",
         "valueUsd": 4898.28,
-        "tokensBurned": 5000.00,
+        "tokensBurned": 5000,
         "txHash": "0x6eb885ffb6efe341efed3c0705044936ce03eefc52d383a75b6dfad2be4ef2b7",
         "note": "该 LP 部分赎回，剩余 18,257 tokens"
       }
     ],
-    "totalWithdrawnValue": 58603.00,
+    "totalWithdrawnValue": 58603,
     "note": "8 笔赎回事件（含 2 笔零值），总计赎回 ~$58,603 USD，占总初始资本 64%。"
   },
-
   "deposits": {
-    "confirmed": 7,
-    "note": "链上确认 7 笔 Deposit 事件，但未逐一解码。从总 supply 和赎回推算，初始投入约 $91,576。"
+    "confirmed": 10,
+    "note": "链上确认 10 笔 Deposit 事件。7/30 新增 3 笔：0x218d... 存入 USDT+USDC，0xd57a... 存入 WBTC。"
   },
-
   "onchainStats": {
-    "totalTransactionExecutedEvents": 47,
-    "dhedgeApiTradeEvents": 23,
-    "unaccountedExecutions": 24,
-    "note_unaccounted": "链上有 47 笔 TransactionExecuted，dHEDGE API 返回 23 笔交易。差额 24 笔主要包含同一资产操作的配套执行、非交易操作及 indexer 未覆盖事件。"
+    "totalTransactionExecutedEvents": 58,
+    "dhedgeApiTradeEvents": 30,
+    "unaccountedExecutions": 28,
+    "note_unaccounted": "链上有 58 笔 TransactionExecuted，dHEDGE API 返回 30 笔交易。差额 28 笔主要包含同一资产操作的配套执行、非交易操作及 indexer 未覆盖事件。"
   },
-
   "fees": {
     "managerFees": [
       {
@@ -172,56 +166,289 @@
     ],
     "note": "Manager fee 当前极低（部分 mint 事件解码不完整），对总资产影响可忽略。"
   },
-
   "summary": {
-    "totalFundValue": 34735.46,
-    "realizedPnl": { "WBTC": -556.22 },
-    "currentCostBasis": { "WBTC": 12566.55, "WETH": 7203.693594, "AMDon": 100, "NVDAon": 100, "QQQon": 100 },
-    "unrealizedPnl": { "status": "notRecalculated", "note": "本次仅同步成交和持仓成本；总基金价值使用 dHEDGE API 最新值。" }
+    "totalFundValue": 41048.07,
+    "realizedPnl": {
+      "WBTC": -556.22
+    },
+    "currentCostBasis": {
+      "WBTC": 26469.58,
+      "WETH": 8803.69,
+      "AMDon": 100,
+      "NVDAon": 100,
+      "QQQon": 100
+    },
+    "unrealizedPnl": {
+      "status": "estimated",
+      "note": "基于近似市价估算。WBTC @ $63,200, WETH @ $1,860。实际总基金价值以 dHEDGE API 为准。"
+    }
   },
-
   "assets": {
     "WBTC": {
-      "currentBalance": 0.20104157,
+      "currentBalance": 0.42021069,
       "note": "链上余额与 7 月新增交易的 FIFO 剩余量完全一致。7 月前未核销的 0.025577 WBTC 已在历史未收录执行中处置，不并入当前成本批次。",
       "trades": [
-        { "date": "2026-05-17", "action": "BUY", "acquiredAmount": 0.01278, "spentAmount": 1000, "spentCurrency": "USDT", "pricePerUnit": 78247.26, "txHash": "0x1a06cea97fa2587ab894fa94107f2c75036933d060dd4f66739c6e42121de46b" },
-        { "date": "2026-05-17", "action": "BUY", "acquiredAmount": 0.012797, "spentAmount": 1000, "spentCurrency": "USDT", "pricePerUnit": 78143.31, "txHash": "0x7e1fe602677b8918f10b9f2b4bc92451165a747aaf6ee2a8e4070279853c5051" },
-        { "date": "2026-05-20", "action": "BUY", "acquiredAmount": 0.01307, "spentAmount": 1000, "spentCurrency": "USDT", "pricePerUnit": 76511.09, "txHash": "0x317b214756ca5ed59476c5f3af4c1741b6c5daffdd20379f0af0b0475ecd1fa0" },
-        { "date": "2026-05-20", "action": "BUY", "acquiredAmount": 0.130536, "spentAmount": 10000, "spentCurrency": "USDT", "pricePerUnit": 76607.22, "txHash": "0xfcc41dd5199ee4835a6d936b68943cc67658641cec89a3f5d38771a9930d8550" },
-        { "date": "2026-05-21", "action": "BUY", "acquiredAmount": 0.129155, "spentAmount": 10000, "spentCurrency": "USDT", "pricePerUnit": 77426.35, "txHash": "0x1b464ea316f92777da13f74e41c5a6b63c76fbd2f8da3060f17365b2f21d415a" },
-        { "date": "2026-05-22", "action": "BUY", "acquiredAmount": 0.128972, "spentAmount": 10000, "spentCurrency": "USDT", "pricePerUnit": 77536.21, "txHash": "0xbfe5bc267a6d3e1a147dd54633fa4138addefea98aaba394590a319f5b56f3bc" },
-        { "date": "2026-05-22", "action": "SELL", "soldAmount": 0.401733, "receivedAmount": 30133.848631, "receivedCurrency": "USDC", "pricePerUnit": 75002.75, "avgCostBasis": 77203.02, "realizedPnl": -883.01, "txHash": "0x841d6c82ba99d57fb67b33c4f90dfd1a1a19a3ad15dee6f548362f478b523bb1" },
-        { "date": "2026-06-03", "action": "BUY", "acquiredAmount": 0.014921, "spentAmount": 1000, "spentCurrency": "USDT", "pricePerUnit": 67019.64, "txHash": "0x74c4461435a45474b23f620a48bb4701c094f77421fd97e943ea1739d6075322" },
-        { "date": "2026-06-03", "action": "SELL", "soldAmount": 0.014921, "receivedAmount": 956.673626, "receivedCurrency": "USDT", "pricePerUnit": 64119.43, "avgCostBasis": 77536.21, "realizedPnl": -200.24, "txHash": "0xf08c1d171e0e6eaab990cec26fd1762f335ee81c279da50952b600e310f9645f" },
-        { "date": "2026-06-08", "action": "BUY", "acquiredAmount": 0.004757, "spentAmount": 300, "spentCurrency": "USDT", "pricePerUnit": 63064.96, "txHash": "0x0d85a29f1d9c5e3b5ee97d5c7bcb9f3f002fd57178a1453e5b809e682a00c676" },
-        { "date": "2026-06-17", "action": "BUY", "acquiredAmount": 0.004617, "spentAmount": 300, "spentCurrency": "USDT", "pricePerUnit": 64977.26, "txHash": "0x800aa280e4bc5f905e89486f83d8c19b57e6bf8ed869519996c36ed365cbd841" },
-        { "date": "2026-06-18", "action": "SELL", "soldAmount": 0.009374, "receivedAmount": 605.210585, "receivedCurrency": "USDC", "pricePerUnit": 64563.06, "avgCostBasis": 77536.21, "realizedPnl": -121.61, "txHash": "0x6e33f402e8606f7681b16469e615581f6dc6aa7765b641e3eca25eb2de1004f7" },
-        { "date": "2026-07-04", "action": "BUY", "acquiredAmount": 0.05463336, "spentAmount": 3419.902114, "spentCurrency": "USDT", "pricePerUnit": 62597.32, "txHash": "0xe004832373c3b446a3d4165d80aa1486c6e70a1959104c6ace244c93822f4d67" },
-        { "date": "2026-07-04", "action": "BUY", "acquiredAmount": 0.34737210, "spentAmount": 21710.475251, "spentCurrency": "aEthUSDC", "pricePerUnit": 62499.19, "txHash": "0x4f2feb9a27ccfba64ca97c7065f261e5697d8890dfee376c32ff18098fef248a" },
-        { "date": "2026-07-09", "action": "BUY", "acquiredAmount": 0.00485768, "spentAmount": 305.210585, "spentCurrency": "USDC", "pricePerUnit": 62830.53, "txHash": "0xdf21b41bb3d963a57259f86d70ac017fdd5808317d39e478850897d2f301bda3" },
-        { "date": "2026-07-10", "action": "SELL", "soldAmount": 0.00478, "receivedAmount": 304.119605, "receivedCurrency": "USDC", "pricePerUnit": 63623.35, "avgCostBasis": 62597.32, "realizedPnl": 4.90, "txHash": "0xedfa5c93a256af6a05ec0507193157cefc67d41cb99a0cce828cb5534120a00e" },
-        { "date": "2026-07-22", "action": "SELL", "soldAmount": 0.20104157, "receivedAmount": 13213.574395, "receivedCurrency": "USDC", "pricePerUnit": 65725.58, "avgCostBasis": 62523.53, "realizedPnl": 643.75, "txHash": "0x8faa02fcf54a4a9c25a0dc42b99ecbcab6a5b65d546c9d20871e2d45a33a1af3" }
+        {
+          "date": "2026-05-17",
+          "action": "BUY",
+          "acquiredAmount": 0.01278,
+          "spentAmount": 1000,
+          "spentCurrency": "USDT",
+          "pricePerUnit": 78247.26,
+          "txHash": "0x1a06cea97fa2587ab894fa94107f2c75036933d060dd4f66739c6e42121de46b"
+        },
+        {
+          "date": "2026-05-17",
+          "action": "BUY",
+          "acquiredAmount": 0.012797,
+          "spentAmount": 1000,
+          "spentCurrency": "USDT",
+          "pricePerUnit": 78143.31,
+          "txHash": "0x7e1fe602677b8918f10b9f2b4bc92451165a747aaf6ee2a8e4070279853c5051"
+        },
+        {
+          "date": "2026-05-20",
+          "action": "BUY",
+          "acquiredAmount": 0.01307,
+          "spentAmount": 1000,
+          "spentCurrency": "USDT",
+          "pricePerUnit": 76511.09,
+          "txHash": "0x317b214756ca5ed59476c5f3af4c1741b6c5daffdd20379f0af0b0475ecd1fa0"
+        },
+        {
+          "date": "2026-05-20",
+          "action": "BUY",
+          "acquiredAmount": 0.130536,
+          "spentAmount": 10000,
+          "spentCurrency": "USDT",
+          "pricePerUnit": 76607.22,
+          "txHash": "0xfcc41dd5199ee4835a6d936b68943cc67658641cec89a3f5d38771a9930d8550"
+        },
+        {
+          "date": "2026-05-21",
+          "action": "BUY",
+          "acquiredAmount": 0.129155,
+          "spentAmount": 10000,
+          "spentCurrency": "USDT",
+          "pricePerUnit": 77426.35,
+          "txHash": "0x1b464ea316f92777da13f74e41c5a6b63c76fbd2f8da3060f17365b2f21d415a"
+        },
+        {
+          "date": "2026-05-22",
+          "action": "BUY",
+          "acquiredAmount": 0.128972,
+          "spentAmount": 10000,
+          "spentCurrency": "USDT",
+          "pricePerUnit": 77536.21,
+          "txHash": "0xbfe5bc267a6d3e1a147dd54633fa4138addefea98aaba394590a319f5b56f3bc"
+        },
+        {
+          "date": "2026-05-22",
+          "action": "SELL",
+          "soldAmount": 0.401733,
+          "receivedAmount": 30133.848631,
+          "receivedCurrency": "USDC",
+          "pricePerUnit": 75002.75,
+          "avgCostBasis": 77203.02,
+          "realizedPnl": -883.01,
+          "txHash": "0x841d6c82ba99d57fb67b33c4f90dfd1a1a19a3ad15dee6f548362f478b523bb1"
+        },
+        {
+          "date": "2026-06-03",
+          "action": "BUY",
+          "acquiredAmount": 0.014921,
+          "spentAmount": 1000,
+          "spentCurrency": "USDT",
+          "pricePerUnit": 67019.64,
+          "txHash": "0x74c4461435a45474b23f620a48bb4701c094f77421fd97e943ea1739d6075322"
+        },
+        {
+          "date": "2026-06-03",
+          "action": "SELL",
+          "soldAmount": 0.014921,
+          "receivedAmount": 956.673626,
+          "receivedCurrency": "USDT",
+          "pricePerUnit": 64119.43,
+          "avgCostBasis": 77536.21,
+          "realizedPnl": -200.24,
+          "txHash": "0xf08c1d171e0e6eaab990cec26fd1762f335ee81c279da50952b600e310f9645f"
+        },
+        {
+          "date": "2026-06-08",
+          "action": "BUY",
+          "acquiredAmount": 0.004757,
+          "spentAmount": 300,
+          "spentCurrency": "USDT",
+          "pricePerUnit": 63064.96,
+          "txHash": "0x0d85a29f1d9c5e3b5ee97d5c7bcb9f3f002fd57178a1453e5b809e682a00c676"
+        },
+        {
+          "date": "2026-06-17",
+          "action": "BUY",
+          "acquiredAmount": 0.004617,
+          "spentAmount": 300,
+          "spentCurrency": "USDT",
+          "pricePerUnit": 64977.26,
+          "txHash": "0x800aa280e4bc5f905e89486f83d8c19b57e6bf8ed869519996c36ed365cbd841"
+        },
+        {
+          "date": "2026-06-18",
+          "action": "SELL",
+          "soldAmount": 0.009374,
+          "receivedAmount": 605.210585,
+          "receivedCurrency": "USDC",
+          "pricePerUnit": 64563.06,
+          "avgCostBasis": 77536.21,
+          "realizedPnl": -121.61,
+          "txHash": "0x6e33f402e8606f7681b16469e615581f6dc6aa7765b641e3eca25eb2de1004f7"
+        },
+        {
+          "date": "2026-07-04",
+          "action": "BUY",
+          "acquiredAmount": 0.05463336,
+          "spentAmount": 3419.902114,
+          "spentCurrency": "USDT",
+          "pricePerUnit": 62597.32,
+          "txHash": "0xe004832373c3b446a3d4165d80aa1486c6e70a1959104c6ace244c93822f4d67"
+        },
+        {
+          "date": "2026-07-04",
+          "action": "BUY",
+          "acquiredAmount": 0.3473721,
+          "spentAmount": 21710.475251,
+          "spentCurrency": "aEthUSDC",
+          "pricePerUnit": 62499.19,
+          "txHash": "0x4f2feb9a27ccfba64ca97c7065f261e5697d8890dfee376c32ff18098fef248a"
+        },
+        {
+          "date": "2026-07-09",
+          "action": "BUY",
+          "acquiredAmount": 0.00485768,
+          "spentAmount": 305.210585,
+          "spentCurrency": "USDC",
+          "pricePerUnit": 62830.53,
+          "txHash": "0xdf21b41bb3d963a57259f86d70ac017fdd5808317d39e478850897d2f301bda3"
+        },
+        {
+          "date": "2026-07-10",
+          "action": "SELL",
+          "soldAmount": 0.00478,
+          "receivedAmount": 304.119605,
+          "receivedCurrency": "USDC",
+          "pricePerUnit": 63623.35,
+          "avgCostBasis": 62597.32,
+          "realizedPnl": 4.9,
+          "txHash": "0xedfa5c93a256af6a05ec0507193157cefc67d41cb99a0cce828cb5534120a00e"
+        },
+        {
+          "date": "2026-07-22",
+          "action": "SELL",
+          "soldAmount": 0.20104157,
+          "receivedAmount": 13213.574395,
+          "receivedCurrency": "USDC",
+          "pricePerUnit": 65725.58,
+          "avgCostBasis": 62523.53,
+          "realizedPnl": 643.75,
+          "txHash": "0x8faa02fcf54a4a9c25a0dc42b99ecbcab6a5b65d546c9d20871e2d45a33a1af3"
+        },
+        {
+          "date": "2026-07-25",
+          "action": "BUY",
+          "acquiredAmount": 0.031206,
+          "spentAmount": 2000,
+          "spentCurrency": "USDC",
+          "pricePerUnit": 64090.24,
+          "txHash": "0x2f81e218cf48ab494e2221b7f1c32aec27775b2ec25a6df490c83e528403767c"
+        },
+        {
+          "date": "2026-07-25",
+          "action": "BUY",
+          "acquiredAmount": 0.031168,
+          "spentAmount": 2000,
+          "spentCurrency": "USDC",
+          "pricePerUnit": 64168.38,
+          "txHash": "0xe1ef84875599352ed960a002b3cd6bd4008385416852a7fa98131fe08dfc835a"
+        },
+        {
+          "date": "2026-07-28",
+          "action": "BUY",
+          "acquiredAmount": 0.015837,
+          "spentAmount": 1000,
+          "spentCurrency": "USDC",
+          "pricePerUnit": 63143.27,
+          "txHash": "0xc12a5bfc06017bd8af0a4d017c81bb19f94ea9e8e1595a76731a3d2b42ecbf58"
+        },
+        {
+          "date": "2026-07-28",
+          "action": "BUY",
+          "acquiredAmount": 0.031615,
+          "spentAmount": 2000,
+          "spentCurrency": "USDC",
+          "pricePerUnit": 63261.11,
+          "txHash": "0xf8bfc8aa09be3e44a4aa902182dcf8fc16c1280fcfcb520741a8ed83db3a23a9"
+        },
+        {
+          "date": "2026-08-02",
+          "action": "BUY",
+          "acquiredAmount": 0.022166,
+          "spentAmount": 1400.02838,
+          "spentCurrency": "USDT",
+          "pricePerUnit": 63161.07,
+          "txHash": "0x4060e26fc44b26708a4e038a4ca2839247423e0e1c2706d598f11163df767d9e"
+        },
+        {
+          "date": "2026-08-02",
+          "action": "BUY",
+          "acquiredAmount": 0.07922,
+          "spentAmount": 5000,
+          "spentCurrency": "USDC",
+          "pricePerUnit": 63115.37,
+          "txHash": "0xe5cecbce5ff9e424f04dbb5a00ff0b2d4848c47f829b6042daac6705ba547d46"
+        }
       ],
       "fifoSummary": {
-        "totalBought": 0.85846814, "documentedTotalSold": 0.63184957,
-        "unrecordedHistoricalDisposal": 0.025577, "reconciledTotalDisposed": 0.65742657,
-        "remainingPerFifo": 0.20104157, "remainingCostBasis": 12566.55,
-        "avgAcquisitionPrice": 62507.20, "realizedPnl": -556.22,
-        "currentLotsNote": "当前成本仅由 2026-07-04 及 2026-07-09 新批次构成；余额与链上核对一致。"
+        "totalBought": 1.06968014,
+        "documentedTotalSold": 0.63184957,
+        "unrecordedHistoricalDisposal": 0.025577,
+        "reconciledTotalDisposed": 0.65742657,
+        "remainingFromTrades": 0.41225357,
+        "lpDepositedWBTC": 0.00795712,
+        "totalOnChain": 0.42021069,
+        "costBasisFromTrades": 25966.58,
+        "costBasisLPDeposited": 503,
+        "totalCostBasis": 26469.58,
+        "avgAcquisitionPrice": 62991.21,
+        "realizedPnl": -556.22,
+        "currentLotsNote": "成本由 2026-07-04、07-09、07-25、07-28、08-02 买入批次 + LP 7/30 WBTC 存入构成。链上余额核对一致。"
       }
     },
-
     "aEthUSDC": {
       "tokenAddress": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
-      "physicalBalance": 0.001247,
+      "physicalBalance": 0.001248,
       "dhedgePosition": 0.001247,
-      "rate": 1.0,
+      "rate": 1,
       "currentValue": 0.001247,
       "note": "2026-07-04 已将该仓位净支出 21,710.475251 aEthUSDC 换为 WBTC，仅剩链上 dust。",
       "trades": [
-        { "date": "2026-05-30", "action": "AAVE_DEPOSIT", "depositedAmount": 30133.85, "depositedCurrency": "USDC", "receivedAmount": 30133.85, "receivedCurrency": "aEthUSDC", "rate": "1:1", "txHash": "0x2fece5f53119b6e4d4a9d7754e390fa439c663ea54c7ca31e664c4200778aa6d" },
-        { "date": "2026-07-04", "action": "SWAP_OUT", "spentAmount": 21710.475251, "spentCurrency": "aEthUSDC", "receivedAmount": 0.34737210, "receivedCurrency": "WBTC", "txHash": "0x4f2feb9a27ccfba64ca97c7065f261e5697d8890dfee376c32ff18098fef248a" }
+        {
+          "date": "2026-05-30",
+          "action": "AAVE_DEPOSIT",
+          "depositedAmount": 30133.85,
+          "depositedCurrency": "USDC",
+          "receivedAmount": 30133.85,
+          "receivedCurrency": "aEthUSDC",
+          "rate": "1:1",
+          "txHash": "0x2fece5f53119b6e4d4a9d7754e390fa439c663ea54c7ca31e664c4200778aa6d"
+        },
+        {
+          "date": "2026-07-04",
+          "action": "SWAP_OUT",
+          "spentAmount": 21710.475251,
+          "spentCurrency": "aEthUSDC",
+          "receivedAmount": 0.3473721,
+          "receivedCurrency": "WBTC",
+          "txHash": "0x4f2feb9a27ccfba64ca97c7065f261e5697d8890dfee376c32ff18098fef248a"
+        }
       ],
       "costBasis": {
         "originalDeposit": 30133.85,
@@ -230,96 +457,174 @@
         "note": "仅剩 dust；7 月换入 WBTC 的净支出已转入 WBTC 成本。"
       }
     },
-
     "aEthUSDT": {
       "tokenAddress": "0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a",
-      "physicalBalance": 0.001248,
-      "rate": 1.0,
+      "physicalBalance": 0.001249,
+      "rate": 1,
       "currentValue": 0.001248,
       "note": "2026-07-04 已将该仓位净支出 7,203.693594 aEthUSDT 换为 WETH，仅剩链上 dust。",
       "trades": [
-        { "date": "2026-05-30", "action": "AAVE_DEPOSIT", "depositedAmount": 10000, "depositedCurrency": "USDT", "receivedAmount": 10000, "receivedCurrency": "aEthUSDT", "rate": "1:1", "txHash": "0x4e9ba675c7d3c1faee815eeb9cba9ac1d8ec52b57287b6edab86910fbcaa1299" },
-        { "date": "2026-07-04", "action": "SWAP_OUT", "spentAmount": 7203.693594, "spentCurrency": "aEthUSDT", "receivedAmount": 4.106380462711232, "receivedCurrency": "WETH", "txHash": "0x7e018608f51b775b5f6eee5fe0fde7482b125b0e44894a04039dd44b2daec11d" }
+        {
+          "date": "2026-05-30",
+          "action": "AAVE_DEPOSIT",
+          "depositedAmount": 10000,
+          "depositedCurrency": "USDT",
+          "receivedAmount": 10000,
+          "receivedCurrency": "aEthUSDT",
+          "rate": "1:1",
+          "txHash": "0x4e9ba675c7d3c1faee815eeb9cba9ac1d8ec52b57287b6edab86910fbcaa1299"
+        },
+        {
+          "date": "2026-07-04",
+          "action": "SWAP_OUT",
+          "spentAmount": 7203.693594,
+          "spentCurrency": "aEthUSDT",
+          "receivedAmount": 4.106380462711232,
+          "receivedCurrency": "WETH",
+          "txHash": "0x7e018608f51b775b5f6eee5fe0fde7482b125b0e44894a04039dd44b2daec11d"
+        }
       ],
-      "costBasis": { "originalDeposit": 10000, "currentBalance": 0.001248, "disposedOrRedeemed": 9999.998752 }
+      "costBasis": {
+        "originalDeposit": 10000,
+        "currentBalance": 0.001248,
+        "disposedOrRedeemed": 9999.998752
+      }
     },
-
     "WETH": {
-      "currentBalance": 4.106380462711232,
+      "currentBalance": 4.966458617916113,
       "trades": [
-        { "date": "2026-07-04", "action": "BUY", "acquiredAmount": 4.106380462711232, "spentAmount": 7203.693594, "spentCurrency": "aEthUSDT", "pricePerUnit": 1754.27, "txHash": "0x7e018608f51b775b5f6eee5fe0fde7482b125b0e44894a04039dd44b2daec11d" }
+        {
+          "date": "2026-07-04",
+          "action": "BUY",
+          "acquiredAmount": 4.106380462711232,
+          "spentAmount": 7203.693594,
+          "spentCurrency": "aEthUSDT",
+          "pricePerUnit": 1754.27,
+          "txHash": "0x7e018608f51b775b5f6eee5fe0fde7482b125b0e44894a04039dd44b2daec11d"
+        },
+        {
+          "date": "2026-08-02",
+          "action": "BUY",
+          "acquiredAmount": 0.860079,
+          "spentAmount": 1600,
+          "spentCurrency": "USDT",
+          "pricePerUnit": 1860.29,
+          "txHash": "0x164eda03bc3a876c625af469f5eb9bd9ba4bc8aae933a606868b51820d17f774"
+        }
       ],
-      "costBasis": { "totalCost": 7203.693594, "avgPricePerUnit": 1754.27 }
+      "costBasis": {
+        "totalCost": 8803.69,
+        "avgPricePerUnit": 1772.63
+      }
     },
-
     "AMDon": {
       "tokenAddress": "0x0c1f3412a44ff99e40bf14e06e5ea321ae7b3938",
       "currentBalance": 0.17322015082486397,
       "trades": [
-        { "date": "2026-07-01", "action": "BUY", "acquiredAmount": 0.17322015082486397, "spentAmount": 100, "spentCurrency": "USDC", "pricePerUnit": 577.30, "txHash": "0xdfd458d5bc6a6db097ce946ff80aefeb3e396bdff555ca74976db4827500dd70" }
+        {
+          "date": "2026-07-01",
+          "action": "BUY",
+          "acquiredAmount": 0.17322015082486397,
+          "spentAmount": 100,
+          "spentCurrency": "USDC",
+          "pricePerUnit": 577.3,
+          "txHash": "0xdfd458d5bc6a6db097ce946ff80aefeb3e396bdff555ca74976db4827500dd70"
+        }
       ],
-      "costBasis": { "totalCost": 100, "avgPricePerUnit": 577.30 }
+      "costBasis": {
+        "totalCost": 100,
+        "avgPricePerUnit": 577.3
+      }
     },
-
     "NVDAon": {
-      "currentBalance": 0.485400939, "rate": 199.97, "currentValue": 97.07,
-      "trades": [{ "date": "2026-06-18", "action": "BUY", "acquiredAmount": 0.485401, "spentAmount": 100, "spentCurrency": "USDC", "pricePerUnit": 206.02, "txHash": "0x15e085ba0da050d161d8ec09622126a80c4be76c8ba0b6a7fab2939ac69af150" }],
-      "costBasis": { "totalCost": 100, "avgPricePerUnit": 206.02 },
+      "currentBalance": 0.4854009391492557,
+      "rate": 199.97,
+      "currentValue": 97.07,
+      "trades": [
+        {
+          "date": "2026-06-18",
+          "action": "BUY",
+          "acquiredAmount": 0.485401,
+          "spentAmount": 100,
+          "spentCurrency": "USDC",
+          "pricePerUnit": 206.02,
+          "txHash": "0x15e085ba0da050d161d8ec09622126a80c4be76c8ba0b6a7fab2939ac69af150"
+        }
+      ],
+      "costBasis": {
+        "totalCost": 100,
+        "avgPricePerUnit": 206.02
+      },
       "unrealizedPnl": -2.93
     },
-
     "QQQon": {
-      "currentBalance": 0.136218134, "rate": 725.44, "currentValue": 98.82,
-      "trades": [{ "date": "2026-06-18", "action": "BUY", "acquiredAmount": 0.136219, "spentAmount": 100, "spentCurrency": "USDC", "pricePerUnit": 734.11, "txHash": "0x2a1faf10f9e756ecb00b7b84befe42ad542cfc2949fbe5cf72764448ddcc37bc" }],
-      "costBasis": { "totalCost": 100, "avgPricePerUnit": 734.11 },
+      "currentBalance": 0.13621813357604382,
+      "rate": 725.44,
+      "currentValue": 98.82,
+      "trades": [
+        {
+          "date": "2026-06-18",
+          "action": "BUY",
+          "acquiredAmount": 0.136219,
+          "spentAmount": 100,
+          "spentCurrency": "USDC",
+          "pricePerUnit": 734.11,
+          "txHash": "0x2a1faf10f9e756ecb00b7b84befe42ad542cfc2949fbe5cf72764448ddcc37bc"
+        }
+      ],
+      "costBasis": {
+        "totalCost": 100,
+        "avgPricePerUnit": 734.11
+      },
       "unrealizedPnl": -1.18
     },
-
     "USDC": {
-      "currentBalance": 13517.694, "rate": 1.0, "currentValue": 13517.694,
-      "note": "idle 余额。主要来自 7/10 与 7/22 两笔 WBTC 卖出。"
+      "currentBalance": 4957.359007,
+      "rate": 1,
+      "currentValue": 13517.694,
+      "note": "idle 余额。7/25-8/2 期间卖出 ~12,000 USDC 换入 WBTC，LP 存入 ~3,440 USDC 补充。"
     },
-
     "USDT": {
-      "currentBalance": 0, "rate": 1.0, "currentValue": 0,
-      "note": "2026-07-04 已全部换入 WBTC。"
+      "currentBalance": 0,
+      "rate": 1,
+      "currentValue": 0,
+      "note": "2026-08-02 已全部用于购买 WETH 和 WBTC。此前 LP 存入约 $3,000 USDT。"
     }
   },
-
   "checkpoint": {
     "description": "下次更新从这里继续，无需从头重查",
-    "lastUpdated": "2026-07-24T08:52:10Z",
-    "lastQueriedBlock": 25601512,
-    "lastQueriedBlockTimestamp": "2026-07-24",
+    "lastUpdated": "2026-08-02T10:00:00Z",
+    "lastQueriedBlock": 25664152,
+    "lastQueriedBlockTimestamp": "2026-08-02",
     "rpcUsed": "https://rpc.mevblocker.io（支持 archive）",
-    "dhedgeApiLastTimestamp": 1784699831,
-    "dhedgeApiLastDate": "2026-07-22T05:57:11Z",
-    "dhedgeApiLastEventCount": 23,
-    "totalOnchainTxExecutedEvents": 47,
+    "dhedgeApiLastTimestamp": 1785635963,
+    "dhedgeApiLastDate": "2026-08-02T01:59:23Z",
+    "dhedgeApiLastEventCount": 30,
+    "totalOnchainTxExecutedEvents": 58,
     "totalOnchainWithdrawals": 8,
-    "totalOnchainDeposits": 7,
+    "totalOnchainDeposits": 10,
     "vaultTokenBalances": {
-      "WBTC": 0.20104157,
-      "USDC": 13517.694,
+      "WBTC": 0.42021069,
+      "WETH": 4.966458617916113,
+      "USDC": 4957.359007,
       "USDT": 0,
-      "aEthUSDC": 0.001247,
-      "aEthUSDT": 0.001248,
-      "WETH": 4.106380462711232,
-      "NVDAon": 0.485400939,
-      "QQQon": 0.136218134,
+      "aEthUSDC": 0.001248,
+      "aEthUSDT": 0.001249,
       "AMDon": 0.17322015082486397,
+      "NVDAon": 0.4854009391492557,
+      "QQQon": 0.13621813357604382,
       "SPYon": 0,
       "TOROS": 0,
       "XAUt": 0
     },
     "nextSteps": [
-      "1. dHEDGE GraphQL: tradeEvents(filter: {timeFrom: 1784699831}) 查 7/22 后新增交易",
-      "2. eth_getLogs (vault): fromBlock=0x186a5e9 (25601513) 查新增链上事件",
+      "1. dHEDGE GraphQL: tradeEvents(filter: {timeFrom: 1785635963}) 查 8/2 后新增交易",
+      "2. eth_getLogs (vault): fromBlock=0x1879a95 (25664153) 查新增链上事件",
       "3. ERC-20 balanceOf: 各 token 余额变化对比 checkpoint 快照",
       "4. eth_getLogs (vault): topics=[Withdrawal|Deposit] 查新增充提",
-      "5. 更新 capitalFlow / withdrawals / deposits / assets / checkpoint"
+      "5. 解码 Deposit 事件获取精确存入金额",
+      "6. 更新 capitalFlow / withdrawals / deposits / assets / checkpoint"
     ]
   },
-
   "pendingVerification": []
 }
